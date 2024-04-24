@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aad0d481-e99a-46c1-a50e-7052ba1c58d7" name="Changes" comment="" />
+    <list default="true" id="3a6bf716-9a31-44b3-9e34-c8acd08e6e4d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +30,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2fIggAuAoanrqPk2cUSPJMe8QWe" />
+  <component name="ProjectId" id="2fSUwjqQ5vHDugrbvEtaVuzTRda" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,19 +38,37 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/student.BOSPF3ALCDK/Desktop/pluralsight/java-development",
-    "settings.editor.selected.configurable": "vcs.Git"
+    "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Palindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pluralsight.Palindrome" />
+      <module name="PalindromeProduct" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pluralsight.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Palindrome" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="aad0d481-e99a-46c1-a50e-7052ba1c58d7" name="Changes" comment="" />
-      <created>1713494114809</created>
+      <changelist id="3a6bf716-9a31-44b3-9e34-c8acd08e6e4d" name="Changes" comment="" />
+      <created>1713794215853</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1713494114809</updated>
+      <updated>1713794215853</updated>
     </task>
     <servers />
   </component>

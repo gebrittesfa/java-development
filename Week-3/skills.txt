@@ -1,0 +1,5 @@
+Skills: 
+Git, HTML, CSS, Bootstrap: 
+JavaScript, HTML, CSS, Node.js: 
+Angule
+Java
