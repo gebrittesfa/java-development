@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.time.YearMonth;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -14,7 +15,7 @@ import java.util.Scanner;
 public class Employer {
     static Scanner input = new Scanner(System.in);
     static ArrayList<Transaction> ledger = new ArrayList<>();
-    static ArrayList<Transaction> transactions = new ArrayList<>();
+    static ArrayList<Transaction> transaction = new ArrayList<>();
 
     public static void main(String[] args) {
         //Method to display home Screen options
@@ -135,11 +136,11 @@ public class Employer {
             for (Transaction transaction : ledger) {
 
                 System.out.println("You chose to display the ledger");
-                System.out.println("Date: " + transactions);
-                System.out.println("Time: " + transactions);
-                System.out.println("Description: " + transactions);
-                System.out.println("Vendor: " + transactions);
-                System.out.println("Amount: " + transactions);
+                System.out.println("Date: " + transaction.getDate());
+                System.out.println("Time: " + transaction.getTime());
+                System.out.println("Description: " + transaction.getDescription());
+                System.out.println("Vendor: " + transaction.getVendor());
+                System.out.println("Amount: " + transaction.getAmount());
                 System.out.println("-----------");
             }
         }
@@ -182,9 +183,9 @@ public class Employer {
             case 0:
                runReport();
                 break;
-            case "H":
-                String option = input.nextLine();
-                break;
+            //case "H":
+                //String option = input.nextLine();
+            // break;
             default:
                 System.out.println("Invalid option. try again.");
         }
@@ -192,7 +193,28 @@ public class Employer {
     }
 
     private static void monthlyToDateReport() {
-        
+        System.out.println("You chose to run the monthly to date report.");
+        // get the current year and month
+        YearMonth currentYearMonth = YearMonth.now();
+        ///Get the start data of the current month
+        LocalDate startDateOfMonth = currentYearMonth.atDay(1);
+
+        //Filter transaction from the start of the month to the current date
+        ArrayList<Transaction> monthlyToDateTransaction = new ArrayList<>();
+        for (Transaction transaction : ledger){
+            if (!transaction.getDate().isBefore(startDateOfMonth));
+            monthlyToDateTransaction.add(transaction);
+        }
+        // Display the transaction for the month to date
+        if (monthlyToDateTransaction.isEmpty()){
+            System.out.println("No transaction found for the month to date.");
+        } else {
+            System.out.println("Transaction for the month to date: ");
+            for (Transaction transaction : monthlyToDateTransaction){
+                System.out.println(transaction);
+            }
+        }
+        runReport();
     }
 
     private static void previousMonthReport() {
@@ -209,9 +231,11 @@ public class Employer {
 
     //Method to read the transaction data from CSV
         public static void readTransactionFromCSV (String fileName){
+       // String csvFile = "transaction.csv";
             try {
                 FileReader fileReader = new FileReader("transaction.csv");
-                BufferedReader reader = new BufferedReader(fileReader);
+                BufferedReader reader = new BufferedReader(fileReader );
+               // BufferedReader reader = new BufferedReader(new FileReader(csvFile));
                 reader.readLine();
                 String line;
                 while ((line = reader.readLine()) != null) {
@@ -223,6 +247,10 @@ public class Employer {
                     double amount = Double.parseDouble(data[4]);
                     //Transaction tran = new Transaction()
                     ledger.add(new Transaction(date, time, description, vendor, amount));
+                    for (String value : data){
+                        System.out.println(value + " ");
+                    }
+                    System.out.println();
 
 
                 }
