@@ -49,9 +49,9 @@
       <recent name="C:\Users\student.BOSPF3ALCDK\Desktop\pluralsight\java-development\Week-3\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FormatDateEx">
-    <configuration name="FormatDateEx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.pluralsight.FormatDateEx" />
+  <component name="RunManager" selected="Application.WriterApp2">
+    <configuration name="OnlineStore" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pluralsight.OnlineStore" />
       <module name="Week-3" />
       <extension name="coverage">
         <pattern>
@@ -63,8 +63,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PayrollCalculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.pluralsight.PayrollCalculator" />
+    <configuration name="OnlineStore2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pluralsight.OnlineStore2" />
       <module name="Week-3" />
       <extension name="coverage">
         <pattern>
@@ -76,8 +76,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReadWritePractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.pluralsight.ReadWritePractice" />
+    <configuration name="ProductDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pluralsight.ProductDriver" />
       <module name="Week-3" />
       <extension name="coverage">
         <pattern>
@@ -89,8 +89,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TimePractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.pluralsight.TimePractice" />
+    <configuration name="SearchInventory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pluralsight.SearchInventory" />
       <module name="Week-3" />
       <extension name="coverage">
         <pattern>
@@ -102,8 +102,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WriteApp1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.pluralsight.WriteApp1" />
+    <configuration name="WriterApp2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pluralsight.WriterApp2" />
       <module name="Week-3" />
       <extension name="coverage">
         <pattern>
@@ -117,11 +117,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FormatDateEx" />
-        <item itemvalue="Application.TimePractice" />
-        <item itemvalue="Application.PayrollCalculator" />
-        <item itemvalue="Application.ReadWritePractice" />
-        <item itemvalue="Application.WriteApp1" />
+        <item itemvalue="Application.WriterApp2" />
+        <item itemvalue="Application.OnlineStore2" />
+        <item itemvalue="Application.OnlineStore" />
+        <item itemvalue="Application.ProductDriver" />
+        <item itemvalue="Application.SearchInventory" />
       </list>
     </recent_temporary>
   </component>
@@ -135,5 +135,16 @@
       <updated>1713793372926</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/pluralsight/FormatDateEx.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
