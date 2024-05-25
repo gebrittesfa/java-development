@@ -1,0 +1,5 @@
+width|height|background
+500|300|white
+shape|x|y|border|color|width|height
+square|10|35|3|blue|75|25
+circle|-30|10|red|18|0 -- circle only has radius
