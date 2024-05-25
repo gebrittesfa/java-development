@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 //package com.pluralsight.streams;
-public class PersonProgramDriver {
+public class ProgramDriver {
 
     public static void main(String[] args) {
         // Create a list of at least 10 people

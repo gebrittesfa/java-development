@@ -22,8 +22,8 @@ public class Robot implements IMovable{
         int biggestUnit = (xUnits >= yUnits) ? xUnits : yUnits;
 
         if (power >= biggestUnit) {
-            currentLocation.setX(currentLocation.getX() + xUnits);
-            currentLocation.setY(currentLocation.getY() + yUnits);
+//            currentLocation.setX(currentLocation.getX() + xUnits);
+//            currentLocation.setY(currentLocation.getY() + yUnits);
 
             power -= biggestUnit;
         }

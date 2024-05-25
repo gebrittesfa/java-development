@@ -8,11 +8,11 @@ public class PairDriver {
                 " - " + twoNums.getRightThing());
 
         // Create an instance of a Pair<T> where T is an
-        Pair<String> twoWords = new Pair<String>("Me", "You");
-        System.out.println(twoWords.getLeftThing() +
-                " n " + twoWords.getRightThing());
-
-    }
+//        Pair<String> twoWords = new Pair<String>("Me", "You");
+//        System.out.println(twoWords.getLeftThing() +
+//                " n " + twoWords.getRightThing());
+//
+//    }
 }
 
 }
