@@ -92,9 +92,9 @@ public class Main {
                 break;
             case 3:
                 System.out.println("Enter the width and height of the triangle: ");
-                int widthBorder = scanner.nextInt();
+                int width = scanner.nextInt();
                 System.out.println("Enter the height: ");
-                int heightBorder = scanner.nextInt();
+                int height = scanner.nextInt();
                 System.out.println("Enter the background");
                 String background = scanner.next();
                 Triangle triangle = new Triangle(x, y, background);
