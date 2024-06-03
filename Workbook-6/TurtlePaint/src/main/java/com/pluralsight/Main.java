@@ -1,5 +1,8 @@
 package com.pluralsight;
 
+import javax.imageio.IIOException;
+import java.io.*;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -37,38 +40,25 @@ public class Main {
         }
     }
 
+
     private static void addShape(Scanner scanner) {
         System.out.println("Which shape? (1. Square 2. Circle 3. Triangle)");
         int shapeType = scanner.nextInt();
 
-        System.out.println("Enter the border width: ");
-        String borderWidth = scanner.next();
-
-        System.out.println("Enter the border color: ");
-        String borderColor = scanner.next();
-
-        System.out.println("Enter the location of the shape (X or Y): ");
-        int x = scanner.nextInt();
-        int y = scanner.nextInt();
+//        System.out.println("Enter the border width: ");
+//        String borderWidth = scanner.next();
+//
+//        System.out.println("Enter the border color: ");
+//        String borderColor = scanner.next();
+//
+//        System.out.println("Enter the location of the shape (X or Y): ");
+//        int x = scanner.nextInt();
+//        int y = scanner.nextInt();
 
         switch (shapeType) {
             case 1:
                 System.out.println("Enter the size of the square: ");
                 //int x = scanner.nextInt();
-                Square square = new Square(1, 2, "White" ,3,4,5);
-
-                square.paint();
-
-                try{
-                    saveImage();
-                }catch (Exception e){
-                    System.out.println(e);
-                }
-
-                break;
-            case 2:
-                System.out.println("Enter the radius of the circle: ");
-                int radius = scanner.nextInt();
                 System.out.println("Enter the X: ");
                 int x = scanner.nextInt();
                 System.out.println("Enter the y: ");
@@ -81,48 +71,86 @@ public class Main {
                 int width = scanner.nextInt();
                 System.out.println("Enter the height: ");
                 int height = scanner.nextInt();
-                Circle circle = new Circle(x, y, color ,border, width, height,radius);
+                Square square = new Square(x, y, color, border, width, height);
+                square.paint();
+
+                square.paint();
+
+                try {
+                    saveImage();
+                } catch (Exception e) {
+                    System.out.println(e);
+                }
+
+                break;
+            case 2:
+                System.out.println("Enter the radius of the circle: ");
+                int radius = scanner.nextInt();
+                System.out.println("Enter the X: ");
+                int xC = scanner.nextInt();
+                System.out.println("Enter the y: ");
+                int yC = scanner.nextInt();
+                System.out.println("Enter the color: ");
+                String colorCircle = scanner.next();
+                System.out.println("Enter the border: ");
+                int borderCircle = scanner.nextInt();
+                System.out.println("Enter the width: ");
+                int widthCircle = scanner.nextInt();
+                System.out.println("Enter the height: ");
+                int heightCircle = scanner.nextInt();
+                Circle circle = new Circle(xC, yC, colorCircle, borderCircle, widthCircle, heightCircle, radius);
                 circle.paint();
 
-                try{
+                try {
                     saveImage();
-                }catch (Exception e){
+                } catch (Exception e) {
                     System.out.println(e);
                 }
                 break;
             case 3:
+                Triangle triangle();
                 System.out.println("Enter the width and height of the triangle: ");
-                int widthBorder = scanner.nextInt();
+                int width = scanner.nextInt();
                 System.out.println("Enter the height: ");
-                int heightBorder = scanner.nextInt();
+                int height = scanner.nextInt();
                 System.out.println("Enter the background");
                 String background = scanner.next();
-                Triangle triangle = new Triangle(x, y, background);
-                triangle.paint();
-
-                try{
-                    saveImage();
-                }catch (Exception e){
-                    System.out.println(e);
-                }
-
+                //Triangle triangle = new Triangle(width, height, background);
+                //triangle.paint();
                 break;
             default:
                 System.out.println("Invalid shape type.");
                 return;
         }
 
-       // canvas.addShape(shape);
+        // canvas.addShape(shape);
         canvas.paintCanvas();
     }
 
     private static void saveImage() {
         // Simulating saving image, in a real application you would save the state of canvas or its visual representation.
         System.out.println("Image saved (simulation).");
+        Shape shape = null;
+        String fileName = "inventory.csv";
+//        try {
+//            BufferedWriter writer = new BufferedWriter(new FileWriter("painting.csv", true));
+//            writer.write("Types");
+//            FileReader fileReader = new FileReader("painting.csv");
+//            BufferedReader bufferedReader = new BufferedReader(fileReader);
+//            bufferedReader.readLine();
+//            String line;
+//            while ((line = bufferedReader.readLine()) != null) {
+//                String[] data = line.split("\\|");
+//                Shape shape1 = new Shape(Integer.parseInt(data[0]), Integer.parseInt(data[1]),
+//                        Integer.parseInt(data[2]), Integer.parseInt(data[3]), Integer.parseInt(data[4]), data[5] );
+//                shape.addShape(shape);
+//                System.out.println(shape);
+//
+////            for (Shape shape : shapes()) {
+////                writer.write(shape.toString());
+////            }
+//        } catch (IOException e) {
+//            System.out.println(e);
+//        }
     }
-
-
-
-
-   //}
 }

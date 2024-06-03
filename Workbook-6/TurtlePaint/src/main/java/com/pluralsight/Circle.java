@@ -7,6 +7,15 @@ public class Circle extends Shape{
         super(x,y,color ,border, width,height);
         this.radius=radius;
     }
+
+    public int getRadius() {
+        return radius;
+    }
+
+    public void setRadius(int radius) {
+        this.radius = radius;
+    }
+
     // @Override
     public void paint(){
         System.out.println("Painting a circle at (" + super.x + ", " + super.y + ") " +
