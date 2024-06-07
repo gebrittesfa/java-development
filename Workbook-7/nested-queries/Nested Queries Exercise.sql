@@ -11,14 +11,8 @@ WHERE shipvia =
 FROM shippers
 WHERE companyname = "Federal Shipping");
 
-SELECT orderid,
-FROM order details
-WHERE productid = 
-(SELECT productid
-FROM products
-WHERE productname =  “Sasquatch Ale”);
 
-SELECT orderid,
+SELECT orderid
 FROM order details
 WHERE productid = 
 (SELECT productid

@@ -5,15 +5,15 @@ INNER JOIN categories c
 ON p.categoryid = c.categoryid
 ORDER BY p.categoryname, p.productname;
 
-SELECT p-productid, p. productname, p.unitprice, s. companyname
+SELECT p.productid, p.productname, p.unitprice, s.companyname
 FROM products p
 LEFT JOIN suppliers s
-ON p.SupplierID = s. SupplierID
+ON p.SupplierID = s.SupplierID
 WHERE p.unitprice > 75
-ORDER BY p. productname;
+ORDER BY p.productname;
 
-SELECT p-productid, p. productname, p.unitprice,
-c.category, s. companyname
+SELECT p.productid, p.productname, p.unitprice,
+c.category, s.companyname
 FROM products p
 INNER JOIN category c
 ON p.categoryid = c.categoryID
