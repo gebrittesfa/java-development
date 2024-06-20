@@ -1,2 +1,5 @@
-package com.pluralsight;public class Product {
+package com.pluralsight;
+
+public class Product {
+
 }

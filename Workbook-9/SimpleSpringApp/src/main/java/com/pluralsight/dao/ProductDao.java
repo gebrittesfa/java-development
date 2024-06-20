@@ -1,2 +1,5 @@
-package com.pluralsight.dao;public interface ProductDao {
+package com.pluralsight.dao;
+
+public interface ProductDao {
+
 }
