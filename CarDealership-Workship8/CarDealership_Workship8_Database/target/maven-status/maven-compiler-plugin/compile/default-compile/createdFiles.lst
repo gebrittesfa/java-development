@@ -1,0 +1,10 @@
+com\pluralsight\Dealership.class
+com\pluralsight\DealerShipFileManager.class
+com\pluralsight\DataManagerDAO.class
+com\pluralsight\SalesDao.class
+com\pluralsight\LeaseDao.class
+com\pluralsight\Sale.class
+com\pluralsight\UserInterface.class
+com\pluralsight\Program.class
+com\pluralsight\Vehicle.class
+com\pluralsight\Lease.class
